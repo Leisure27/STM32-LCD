@@ -248,6 +248,9 @@ void ST7735_DrawChar(uint16_t x, uint16_t y, char ch, uint16_t color, uint16_t b
   }
 }
 
+/*
+ * @note 超出屏幕范围的字符，可自动换行
+ */
 void ST7735_DrawString(uint16_t x, uint16_t y, const char *str, uint16_t color, uint16_t bgColor, const FontDef *font)
 {
   while (*str)

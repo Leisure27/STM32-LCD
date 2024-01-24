@@ -4,7 +4,7 @@
 #include "main.h"
 #include "spi.h"
 #include "Font.h"
-#include "stdio.h"
+#include <stdio.h> // 使用snprintf()函数需要添加的库
 
 #define ST7735_SPI_INSTANCE hspi2
 #define ST7735_RST_Pin LCD_RES_Pin
